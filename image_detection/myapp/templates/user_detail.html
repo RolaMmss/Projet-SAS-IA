@@ -1,0 +1,9 @@
+<h2>{{ user.name }}</h2>
+
+<ul>
+ <li>Age : {{ user.age }}</li>
+ <li>Email : {{ user.email }}</li>
+ <li>mot de passe : {{ user.mdp }}</li>
+</ul>
+
+<a href="{% url 'user-list' %}">Retour à tous les users</a>

@@ -1,0 +1,4 @@
+asgiref @ file:///opt/conda/conda-bld/asgiref_1661287532135/work
+certifi @ file:///croot/certifi_1665076670883/work/certifi
+Django @ file:///opt/conda/conda-bld/django_1661296381686/work
+sqlparse @ file:///tmp/build/80754af9/sqlparse_1602184451250/work
