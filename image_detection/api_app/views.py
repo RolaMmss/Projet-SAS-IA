@@ -26,7 +26,7 @@ def api_keywords(request):
                     form.save()
                     info = json.loads(reponse.text)
                     print(info)
-                    return render(request, 'api_app/formulaire.html', context = {'form' : form, 'info' :info})
+                    return render(request, 'api_app/reponse_formulaire.html', context = {'form' : form, 'info' :info})
 
         else :
             form = forms.ApiKeywordsForm()
@@ -34,6 +34,11 @@ def api_keywords(request):
 
 
 
+
+
+
+
+        
         
 
 

@@ -1,7 +1,23 @@
-<form method="POST">
+{% comment %} <form method="POST">
     {% csrf_token %}
     {{form}}
-    <button type="submit">Envoyez</button>
+    <button type="submit">Soumettre</button>
 </form>
 
-<p>{{info.keywords}}</p>
+<p>{{info.keywords}}</p> {% endcomment %}
+
+
+<form method="POST">
+
+    {% csrf_token %}
+    {% for field in form %}
+    <div class="form-group">
+        <div class="form-control">
+            <label>{{field.label}} </label>
+            {{field}}</div>
+    </div>
+    {% endfor %}
+    <div>
+        <input class="btn btn-primary" type="submit" value="Valider">
+    </div>
+</form>

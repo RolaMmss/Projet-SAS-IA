@@ -1,6 +1,6 @@
 from django import forms
 from . import models
-
+from django.forms import CheckboxSelectMultiple
 
 class ApiKeywordsForm(forms.ModelForm):
     class Meta:
@@ -9,4 +9,7 @@ class ApiKeywordsForm(forms.ModelForm):
         labels = {
             "url": "Entrez l'url de votre image",
             "num_keywords": "Entrez le nombre max de mots-clés"
+        }
+        widgets = {
+            "api_choices":CheckboxSelectMultiple()
         }
