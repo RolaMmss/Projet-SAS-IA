@@ -25,5 +25,6 @@ urlpatterns = [
     # path('user/add/', views.user_create, name='user-create'),
     # path('users/', views.user_list, name='user-list'), 
     # path('users/<int:id>/', views.user_detail, name='user-detail'),
-     path('accounts/login', include('django.contrib.auth.urls')),
+    #  path('accounts/login', include('django.contrib.auth.urls')),
+     path('services/', views.services, name='services')
 ]
