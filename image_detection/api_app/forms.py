@@ -1,6 +1,12 @@
-from django.shortcuts import render
-from . import forms
-import json
+from django import forms
+from . import models
 
-def api (request):
-    url = "https://api.everypixel.com/v1"
+
+class ApiKeywordsForm(forms.ModelForm):
+    class Meta:
+        model = models.ApiKeywordsModel
+        fields = "__all__"
+        labels = {
+            "url": "Entrez l'url de votre image",
+            "num_keywords": "Entrez le nombre max de mots-clés"
+        }
