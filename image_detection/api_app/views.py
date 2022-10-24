@@ -14,11 +14,11 @@ CLIENT_SECRET = os.getenv('CLIENT_SECRET')
 
 
 
-def api_keywords(request):
-        url_api="https://api.everypixel.com/v1/keywords"
+def api(request):
+        url_api="https://api.everypixel.com/v1/faces"
 
         if request.method =="POST":
-                form = forms.ApiKeywordsForm(request.POST)
+                form = forms.ApiForm(request.POST)
                 if form.is_valid():
                     # param = {"url": form.url, "num_keywords":form.num_keywords}
                     print(form.cleaned_data)
@@ -29,8 +29,11 @@ def api_keywords(request):
                     return render(request, 'api_app/reponse_formulaire.html', context = {'form' : form, 'info' :info})
 
         else :
-            form = forms.ApiKeywordsForm()
+            form = forms.ApiForm()
         return render(request, 'api_app/formulaire.html', context = {'form' : form})
+
+
+
 
 
 
