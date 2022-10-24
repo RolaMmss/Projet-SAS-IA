@@ -14,6 +14,7 @@ class ApiKeywordsModel(models.Model):
         blank=False,
         null=True
     )
+    
     CHOICES = [
         ('s1',"s1"),
         ('s2',"s2"),
