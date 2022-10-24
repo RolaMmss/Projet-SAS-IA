@@ -18,10 +18,19 @@ from django.contrib import admin
 from django.urls import path, include
 from myapp import views
 
+from . import views
+from .views import homepage
+from django.urls import path, include
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('services/', views.services, name='services'),
-    path('signin/', views.signin, name = 'signin'),
-    path('signup/', views.signup, name = 'signup'),
+    # path('services/', views.services, name='services'),
+    # path('signin/', views.signin, name = 'signin'),
+    # path('signup/', views.signup, name = 'signup'),
+    path('',homepage, name='home'),
+    path('api/', include('api_app.urls')),
+    path('signup/', include('signup.urls')),
+    path('accounts/', include('django.contrib.auth.urls'))
 ]
+
