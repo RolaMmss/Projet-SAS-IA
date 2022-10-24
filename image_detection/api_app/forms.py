@@ -10,6 +10,6 @@ class ApiKeywordsForm(forms.ModelForm):
             "url": "Entrez l'url de votre image",
             "num_keywords": "Entrez le nombre max de mots-clés"
         }
-        widgets = {
-            "api_choices":CheckboxSelectMultiple()
-        }
+        # widgets = {
+        #     "api_choices":CheckboxSelectMultiple()
+        # }

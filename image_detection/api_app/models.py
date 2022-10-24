@@ -15,14 +15,14 @@ class ApiKeywordsModel(models.Model):
         null=True
     )
     
-    CHOICES = [
-        ('s1',"s1"),
-        ('s2',"s2"),
-        ('s3',"s3"),
-    ]
+    # CHOICES = [
+    #     ('s1',"s1"),
+    #     ('s2',"s2"),
+    #     ('s3',"s3"),
+    # ]
 
-    api_choices = models.CharField(
-        max_length=50,
-        blank=False,
-        choices = CHOICES,
-    )
+    # api_choices = models.CharField(
+    #     max_length=50,
+    #     blank=False,
+    #     choices = CHOICES,
+    # )
