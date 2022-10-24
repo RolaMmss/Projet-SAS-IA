@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<main>
+    <div class="container py-4">
+      {% comment %} <header class="pb-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+
+          <span class="fs-4">hthy</span>
+        </a>
+      </header> {% endcomment %}
+  
+      <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">Image Detection</h1>
+          <p class="col-md-8 fs-4">Vous voulez en connaitre plus sur vos images? Vous êtes au bon endroit!
+            Image detetction vous le permet grâce différents services  </p>
+          <button class="btn btn-primary btn-lg" type="button">Lancez-vous!</button>
+          
+        </div>
+      </div>
+  
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="h-100 p-5 text-bg-dark rounded-3">
+            <h2>La magie de l'IA</h2>
+            <p>Utilisez toute la puissance de l'IA pour trouver les mots-clés attachés à votre image, évaluer la qualité de vos photos ou le nombres de personnes sur celles-ci ainsi que leur âge </p>
+
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="h-100 p-5 bg-light border rounded-3 ">
+            <picture>
+
+            </picture>
+            <button class="btn btn-primary btn-lg " type="button">En savoir plus</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  
+      
+    </body>
+{% endblock content %}
