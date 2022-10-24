@@ -43,3 +43,20 @@ def services(request):
            'services.html',  # pointe vers le nouveau nom de modèle
    )
         #    {'users': users})
+
+# Create Sign in page
+def signin(request):
+#    users = User.objects.all()
+   return render(request,
+           'signin.html',  # pointe vers le nouveau nom de modèle
+   )
+        #    {'users': users})
+
+# Login page
+def signup(request):
+#    users = User.objects.all()
+   return render(request,
+           'signup.html',  # pointe vers le nouveau nom de modèle
+   )
+        #    {'users': users})
+

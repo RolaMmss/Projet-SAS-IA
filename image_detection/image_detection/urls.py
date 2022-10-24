@@ -21,10 +21,7 @@ from myapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('signin/', signin, name = "signin")
-    # path('user/add/', views.user_create, name='user-create'),
-    # path('users/', views.user_list, name='user-list'), 
-    # path('users/<int:id>/', views.user_detail, name='user-detail'),
-    #  path('accounts/login', include('django.contrib.auth.urls')),
-     path('services/', views.services, name='services')
+    path('services/', views.services, name='services'),
+    path('signin/', views.signin, name = 'signin'),
+    path('signup/', views.signup, name = 'signup'),
 ]
