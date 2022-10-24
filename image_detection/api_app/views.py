@@ -24,9 +24,9 @@ def api(request):
                     print(form.cleaned_data)
                     reponse = requests.get(url_api, params = form.cleaned_data, auth =(CLIENT_ID,CLIENT_SECRET))
                     form.save()
-                    info = json.loads(reponse.text)
+                    info = json.loads(reponse.text)["faces"][0]
                     print(info)
-                    return render(request, 'api_app/reponse_formulaire.html', context = {'form' : form, 'info' :info})
+                    return render(request, 'api_app/reponse_formulaire.html', context = {'form' : form, 'age' : info["age"] , 'score': info["score"], 'class':info['class']})
 
         else :
             form = forms.ApiForm()
