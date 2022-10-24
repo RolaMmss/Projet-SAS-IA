@@ -11,9 +11,3 @@ class SignupPage(CreateView):
     template_name= 'registration/signup.html'
     
 
-
-
-
-
-
-
