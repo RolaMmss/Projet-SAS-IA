@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'api_app',
     'signup',
     'myapp',
+    #'services',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
