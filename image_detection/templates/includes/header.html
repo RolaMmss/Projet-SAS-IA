@@ -30,10 +30,10 @@
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="#" class="nav-link px-2 link-secondary"><i class="bi bi-house"></i></a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Home</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Services</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Se connecter</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">S'inscrire</a></li>
+        <li><a href="{% url 'home' %}" class="nav-link px-2 link-dark">Home</a></li>
+        <li><a href="{% url 'services' %}" class="nav-link px-2 link-dark">Services</a></li>
+        <li><a href="{% url 'login' %}" class="nav-link px-2 link-dark">Se connecter</a></li>
+        <li><a href="{% url 'signup:signup' %}" class="nav-link px-2 link-dark">S'inscrire</a></li>
       </ul> 
 
 
