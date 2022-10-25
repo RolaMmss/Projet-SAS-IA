@@ -9,9 +9,20 @@
         <div>{{field}}</div>
     {% endfor %}
     <div>
-        <input type="submit" value="Test">
+        <input type="submit" value="Valider">
     </div>
 </form>
-<p>{{info.keywords}}</p>
+
+    <table>
+                <p>Il y a au total {{nombre_personne}} personne(s) sur la photo</p>
+        <tr> 
+        <th>Age</th>
+        <th>Catégorie des personnes</th> </tr>
+        {% for personne in info %}
+        <tr><td> {{ personne.age | floatformat:0}} </td>
+            <td> {{ personne.class }} </td>
+        </tr>
+        {% endfor %}
+    </table>
 
 {% endblock content %}
