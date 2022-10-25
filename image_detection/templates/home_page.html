@@ -4,19 +4,13 @@
 {% block content %}
 <main>
     <div class="container py-4">
-      {% comment %} <header class="pb-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-
-          <span class="fs-4">hthy</span>
-        </a>
-      </header> {% endcomment %}
-  
+ 
       <div class="p-5 mb-4 bg-light rounded-3">
         <div class="container-fluid py-5">
-          <h1 class="display-5 fw-bold">Image Detection</h1>
-          <p class="col-md-8 fs-4">Vous voulez en connaitre plus sur vos images? Vous êtes au bon endroit!
-            Image detection vous le permet grâce à différents services  </p>
-          <button class="btn btn-primary btn-lg" type="button">Lancez-vous!</button>
+          <h1 class="display-5 fw-bold">VisAge</h1>
+          <p class="col-md-8 fs-4">Vous voulez en connaitre plus sur vos images? Vous êtes au bon endroit! </p>
+            {% comment %} VisAge vous le permet de compter le nombre de personne ainsi que leur âge.   </p> {% endcomment %}
+          {% comment %} <button class="btn btn-primary btn-lg" type="button">Lancez-vous!</button> {% endcomment %}
         
         </div>
       </div>
@@ -25,19 +19,19 @@
         <div class="col-md-6">
           <div class="h-100 p-5 text-bg-dark rounded-3">
             <h2>La magie de l'IA</h2>
-            <p>Utilisez toute la puissance de l'IA pour trouver les mots-clés attachés à votre image, évaluer la qualité de vos photos ou le nombres de personnes sur celles-ci ainsi que leur âge </p>
+            <p>VisAge utilise toute la puissance de l'IA pour compter le nombre de personne ainsi que leur âge. </p>
 
           </div>
         </div>
         
         <div class="col-md-6">
-          <div class="h-100 p-5 bg-light border rounded-3 ">
-            <picture>
+          {% comment %} <div class="h-100 p-5 bg-light border rounded-3 "> {% endcomment %}
+          
+            <button class="btn btn-primary btn-lg" onclick="location.href='services'"  type="button">Lancez-vous!</button>
 
-            </picture>
-            <button class="btn btn-primary btn-lg " type="button">En savoir plus</button>
+            {% comment %} <button class="btn btn-primary btn-lg " type="button">En savoir plus</button> {% endcomment %}
             
-          </div>
+          {% comment %} </div> {% endcomment %}
         </div>
       </div>
     </div>

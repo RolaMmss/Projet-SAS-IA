@@ -3,7 +3,7 @@
  
 {% block content %}
 
-<style>
+ <style>
   .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -54,27 +54,25 @@
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
-</style>
+</style> 
+<!------------------------------------------------------------------------------------------------------>
 <!------------------------------------------------------------------------------------------------------>
 <main>
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Services</h1>
-        <p class="lead text-muted">Ces services offre des prédictions sur une image précis.</p>
-        {% comment %} <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p> {% endcomment %}
+        <h1 class="display-5 fw-bold lh-1 mb-3">Nombre de personnes et l'âge</h1>
+        <p class="lead text-muted">Ce service offre des prédictions sur une image précis. 
+          Il permet de trouver des visages sur la photo et d'en estimer l'âge en extraitant les traits du visage.</p>
       </div>
     </div>
   </section>
   <!---------------------------------------------------------------------------------------------------->
-  <div class="album py-5 bg-light">
     <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> 
         <!------------------------------------------------->
-        <div class="col">
+<!------------------------------------------------------------------------------------------------------>
+        {% comment %} <div class="col">
           <div class="card shadow-sm">
             <h5 class="card-header">Mots-clés </h5>
             <img src="{% static 'images/friendsdog.jpg' %}">
@@ -88,21 +86,14 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> {% endcomment %}
         <!------------------------------------------------>
-        <div class="col">
+        {% comment %} <div class="col">
           <div class="card shadow-sm">
             <h5 class="card-header">Qualité d'image</h5>
             <img src="{% static 'images/chien.jpeg' %}">
             <div class="card-body">
               <p class="card-text"> Ce modèle unique pour estimer l'esthétique des photos. </p>
-              {% comment %} <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div> {% endcomment %}
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                 <label class="form-check-label" for="flexCheckChecked">
@@ -111,39 +102,58 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> {% endcomment %}
         <!-------------------------------------------------->
-        <div class="col">
-          <div class="card shadow-sm">
-            <h5 class="card-header">Nombre de personnes et l'âge</h5>
-            <img src="{% static 'images/age.jpg' %}">
-            <div class="card-body">
-              <p class="card-text"> Ce model permet de trouver des visages sur la photo et d'en estimer l'âge en extraitant les traits du visage. </p>
-              {% comment %} <div class="d-flex justify-content-between align-items-center"> {% endcomment %}
-                {% comment %} <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div> {% endcomment %}
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                  Nombre de personnes et l'âge
-                </label>
-              </div>
+        <!------------------------------------------------------------------------------------------------------>
+          <section class="py-5 text-center container">
+            <div class="card shadow-sm">
+              <img src="{% static 'images/age.jpg' %}">                            
             </div>
-          </div>
-        </div>
+          </section>
           <!-------------------------------------------------->
       </div>
     </div>
-  </div>
   <!------------------------------------------------------------------------------------------------------>
-  <div class="d-grid gap-2 col-6 mx-auto">
-    <button class="btn btn-primary" type="button">Télécharger une image </button>
-  </div>
 
-</main>
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <label class="form-label" for="customFile">Télécharger une image</label>
+    <input type="file" class="form-control" id="customFile" />
+    <div class="form-outline">
+      <input type="url" id="typeURL" class="form-control" />
+      <label class="form-label" for="typeURL">Ou ajouter l'URL</label>
+    </div>
+  </div> 
+
+
+
+</main>  
+
+
+
+
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="{% static 'images/age.jpg' %}" alt="Bootstrap Themes" >
+      {% comment %} width="700" height="500" loading="lazy"> {% endcomment %}
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold lh-1 mb-3">Nombre de personnes et l'âge</h1>
+      <p class="lead">Ce service offre des prédictions sur une image précis. 
+        Il permet de trouver des visages sur la photo et d'en estimer l'âge en extraitant les traits du visage.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <label class="form-label" for="customFile">Télécharger une image</label>
+        <input type="file" class="form-control" id="customFile" />
+        {% comment %} <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> {% endcomment %}
+        
+      </div>
+      <div class="form-outline">
+        <input type="url" id="typeURL" class="form-control" />
+        <label class="form-label" for="typeURL">Ou ajouter l'URL</label>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock content %}
 

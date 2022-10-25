@@ -22,10 +22,16 @@
     </div>
   </nav>  {% endcomment %}
 
+
+  
  <div class="container">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+      <a href="{% url 'home' %}" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
         <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        {% comment %} <img src="{% static 'images/logo.jpeg' %}">  {% endcomment %}
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaFVLe69l4_h2v0rvB5wagLsd7GTPJwwHoGQ&usqp=CAU" width="70" height="50" loading="lazy">
+
+        <span class="fs-4">VisAge</span>
       </a>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
