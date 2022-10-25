@@ -9,7 +9,7 @@
         <div>{{field}}</div>
     {% endfor %}
     <div>
-        <input type="submit" value="Test">
+        <input type="submit" value="Valider">
     </div>
 </form>
 
@@ -19,7 +19,7 @@
         <th>Age</th>
         <th>Catégorie des personnes</th> </tr>
         {% for personne in info %}
-        <tr><td> {{ personne.age}} </td>
+        <tr><td> {{ personne.age | floatformat:0}} </td>
             <td> {{ personne.class }} </td>
         </tr>
         {% endfor %}
